@@ -72,10 +72,10 @@ index=sysmon sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" (E
 | sort - firstTime
 ```
 ### Tuning & false positives:
-- Some enterprise apps use rundll32.exe legitimately; requiring network improves signal.
+- Some enterprise apps use `rundll32.exe` legitimately; requiring network improves signal.
 - Consider excluding known corporate proxy/DNS destinations or trusted internal ranges.
 - Increase confidence when command line includes URLs or script-related flags.
 
 ### Validation plan:
-- Lab: execute mshta.exe against a harmless internal test URL (or simulate with a local web server).
+- Lab: execute `mshta.exe` against a harmless internal test URL (or simulate with a local web server).
 - Confirm a corresponding Sysmon EID 3 appears with matching ProcessId near the process start time.
