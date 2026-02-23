@@ -19,6 +19,14 @@ This is a “portable” detection pack: the **same behavioral idea** is express
 - Sentinel: MDE tables available in Log Analytics (see `docs/data-sources.md`)
 - Splunk: Sysmon ingested (see `docs/data-sources.md`)
 
+### Quick adaptation notes
+- **Splunk:** Update `index=` / `sourcetype=` and field names if your Sysmon TA differs.
+- **Sentinel:** Some detections assume **MDE tables**; if you use `SecurityEvent`/Sysmon tables, adjust table/field names.
+- Each detection includes **tuning hooks**—start broad, then add allowlists based on your environment.
+
+## Validation
+Each detection includes a **validation plan**. Where possible, test in a lab using benign commands or controlled simulations before enabling alerting in production.
+
 ## Coverage summary
 
 | Detection | ATT&CK | Primary telemetry | KQL | SPL |
