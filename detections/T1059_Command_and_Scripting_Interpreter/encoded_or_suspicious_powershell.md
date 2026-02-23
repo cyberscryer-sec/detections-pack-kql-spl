@@ -54,10 +54,10 @@ index=sysmon sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" Ev
 ```
 
 ### Tuning & false positives:
-- Admin scripts and automation can legitimately use -NoProfile or -NonInteractive.
+- Admin scripts and automation can legitimately use `-NoProfile` or `-NonInteractive`.
 - Consider allowlisting known management tooling parents (e.g., software deployment agents).
 - Increase confidence if parent is Office apps, browsers, or unusual LOLBins.
 
 ### Validation plan:
-- Quick test (safe): run powershell -NoProfile -WindowStyle Hidden -Command "Write-Host test"
+- Quick test (safe): run `powershell -NoProfile -WindowStyle Hidden -Command "Write-Host test"`
 - Lab-only: run a benign base64 encoded command and verify it triggers.
