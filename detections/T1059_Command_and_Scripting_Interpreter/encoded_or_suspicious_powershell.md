@@ -59,5 +59,5 @@ index=sysmon sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" Ev
 - Increase confidence if parent is Office apps, browsers, or unusual LOLBins.
 
 ### Validation plan:
-- Quick test (safe): run `powershell -NoProfile -WindowStyle Hidden -Command "Write-Host test"`
+- Quick test (safe): run `powershell` `-NoProfile` `-WindowStyle` `Hidden` `-Command` `"Write-Host test"`
 - Lab-only: run a benign base64 encoded command and verify it triggers.
