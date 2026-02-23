@@ -30,6 +30,13 @@ This is a “portable” detection pack: the **same behavioral idea** is express
 | New Service Installed (user-writable path) | T1543.003 | Proc create + service binary | ✅ | ✅ |
 | Run Key Persistence | T1547.001 | Registry set + proc | ✅ | ✅ |
 
+## Detections included
+- **Execution:** PowerShell obfuscation/abuse flags (encoded, hidden window, bypass patterns)
+- **Proxy execution:** LOLBins with near-time outbound network activity
+- **Persistence:** Run/RunOnce registry key modifications; service install with suspicious binary paths
+- **Credential access:** LSASS handle access via Sysmon Process Access (EID 10)
+- **Account manipulation:** New local users and local admin group changes (Windows Security logs)
+
 ## How to operationalize (high-level)
 ### Microsoft Sentinel
 - Convert KQL into **Analytics Rules**
