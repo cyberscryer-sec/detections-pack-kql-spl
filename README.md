@@ -6,7 +6,7 @@ A small, practical set of SOC detections written in **Microsoft Sentinel KQL** a
 - **tuning guidance** (false positives + suggested filters)
 - **validation notes** (how you’d test in a lab)
 
-## What this repo is
+## "What is this?"
 This is a “portable” detection pack: the **same behavioral idea** is expressed in both KQL and SPL, with explicit assumptions about telemetry and field availability.
 
 ## Quick start
