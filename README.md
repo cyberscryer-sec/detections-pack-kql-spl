@@ -27,7 +27,7 @@ This is a “portable” detection pack: the **same behavioral idea** is express
 | [LOLBins w/ Network (mshta/rundll32/regsvr32)](detections/T1218_Signed_Binary_Proxy_Execution/lolbins_with_network_mshta_rundll32_regsvr32.md) | T1218 | Proc + network | ✅ | ✅ |
 | [LSASS Suspicious Access (Sysmon EID 10)](detections/T1003_OS_Credential_Dumping/lsass_suspicious_access_sysmon10.md) | T1003.001 | Proc access + source proc | ✅ | ✅ |
 | [New Local User / Added to Local Admins](detections/T1136_Create_Account/new_local_user_or_added_to_admins.md) | T1136 / T1098 | Security events | ✅ | ✅ |
-| [New Service Installed (user-writable path)](detections/T1543_Create_or_Modify_System_Process/new_service_user_writable_path.md)) | T1543.003 | Proc create + service binary | ✅ | ✅ |
+| [New Service Installed (user-writable path)](detections/T1543_Create_or_Modify_System_Process/new_service_user_writable_path.md) | T1543.003 | Proc create + service binary | ✅ | ✅ |
 | [Run Key Persistence](detections/T1547_Boot_or_Logon_Autostart_Execution/run_key_persistence_registry_set.md) | T1547.001 | Registry set + proc | ✅ | ✅ |
 
 ## Detections included
