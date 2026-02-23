@@ -57,9 +57,9 @@ index=sysmon sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" Ev
 ### Tuning & false positives:
 - Many legitimate applications set Run keys (especially per-user).
 - Raise severity if the value points to:
-  - \Users\, \AppData\, \Temp\, script interpreters, or random folder names
+  - `\Users\`, `\AppData\`, `\Temp\`, script interpreters, or random folder names
 - Consider allowlisting known vendor paths.
 
 ### Validation plan:
 - Lab: create a benign Run key value pointing to a harmless executable and confirm Sysmon EID 13 is logged.
-- Verify TargetObject matches one of the Run/RunOnce keys and Details contains the configured value.
+- Verify `TargetObject` matches one of the Run/RunOnce keys and `Details` contains the configured value.
